@@ -31,9 +31,9 @@ a:hover {
 .wrapper {
   background: white;
   margin: 70px auto;
-  padding: 10px; /* Adds some space inside the wrapper */
+  padding: 15px; /* Adds some space inside the wrapper */
   width: 90%;
-  max-width: 1250px;
+  max-width: 1240px;
   overflow: hidden;
   border: 6px solid #4a4a4a;
   -webkit-box-sizing: border-box;
@@ -554,9 +554,15 @@ h4 {
   box-sizing: border-box;
 }
 
-.portfolio-item {
-  margin: 0;
-  padding: 0;
+@media (max-width: 1385px) and (min-width: 1010px) {
+  .container {
+    max-width: 98%;
+    width: 98%;
+  }
+
+  .portfolio-items {
+    justify-content: space-between;
+  }
 }
 
 /* Media queries to make the filter responsive */
